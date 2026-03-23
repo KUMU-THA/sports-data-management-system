@@ -15,7 +15,7 @@ const authMiddleware = (req, res, next) => {
     // Attach user info
     req.user = {
       id: decoded.id,
-      role: decoded.role,             // real role (admin/staff/director)
+      role: decoded.role,             
       activeRole: decoded.activeRole, // current acting role
     };
 

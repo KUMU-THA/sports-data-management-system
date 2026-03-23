@@ -43,11 +43,28 @@ router.post("/switch-role", auth, staffOnly, async (req, res) => {
 // ================================================================
 
 // POST /staff/students
+
 router.post("/students", auth, staffOnly, async (req, res) => {
-  const username   = rawUsername?.trim();
-  const name       = rawName?.trim();
-  const rollno     = rawRollno?.trim();
+
+  const rawUsername = req.body.username;
+  const rawName = req.body.name;
+  const rawRollno = req.body.rollno;
+
+  const username = rawUsername?.trim();
+  const name = rawName?.trim();
+  const rollno = rawRollno?.trim();
+
+  const password = req.body.password;
+  const department = req.body.department;
+  const batch = req.body.batch;
+  const batch_year = req.body.batch_year;   
   const reg_number = req.body.reg_number?.trim() || null;
+  const email = req.body.email;
+  const phone = req.body.phone;
+  const gender = req.body.gender;
+  const dob = req.body.dob;
+  const blood_group = req.body.blood_group;
+  const address = req.body.address;
   if (!username || !password || !name || !rollno || !department || !batch) {
     return res.status(400).json({
       message: "username, password, name, rollno, department, batch are required"
