@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-const API = "http://127.0.0.1:5000";
+const API = process.env.REACT_APP_API_URL;
 
 const injectStyles = () => {
   if (document.getElementById("am-resp")) return;
