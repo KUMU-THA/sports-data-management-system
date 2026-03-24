@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 
-const API = "http://127.0.0.1:5000";
+const API = process.env.REACT_APP_API_URL;;
 
 /* ── tiny helpers ── */
 const fmt = d =>
