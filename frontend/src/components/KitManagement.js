@@ -5,8 +5,7 @@
 //   {page === "kits" && <KitManagement token={getToken()} />}
 
 import { useState, useEffect, useCallback } from "react";
-
-const API = "http://127.0.0.1:5000";
+const API = process.env.REACT_APP_API_URL;
 
 // ── Tiny toast hook ───────────────────────────────────────────────
 function KitToast({ msg, type, onDone }) {
