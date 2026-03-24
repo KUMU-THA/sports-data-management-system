@@ -32,6 +32,6 @@ app.get("/", (req, res) => {
 });
 app.use('/training-programs', trainingProgramsRouter);
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
-app.use("/staff", require("./routes/student-records.routes"));
+app.use("/staff", require("./routes/Student-records.routes"));
 module.exports = app;
 
