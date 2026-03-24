@@ -1,8 +1,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 
-const API = "http://127.0.0.1:5000";
-
+const API = process.env.REACT_APP_API_URL;
 // ── Helpers ───────────────────────────────────────────────────────
 const fmtDate = d => d ? new Date(d).toLocaleDateString("en-IN", { day:"2-digit", month:"short", year:"numeric" }) : "—";
 const daysLeft = d => {
