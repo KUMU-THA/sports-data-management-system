@@ -1,6 +1,6 @@
 // src/components/PerformanceManagement.jsx
 import { useState, useEffect } from "react";
-const API = "http://127.0.0.1:5000";
+const API = process.env.REACT_APP_API_URL;
 
 const inject = () => {
   if (document.getElementById("pm-sty")) return;
