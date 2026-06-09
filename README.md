@@ -34,7 +34,6 @@
 - [Database Schema](#-database-schema)
 - [API Reference](#-api-reference)
 - [Getting Started](#-getting-started)
-- [Screenshots](#-screenshots)
 - [Future Enhancements](#-future-enhancements)
 - [Project Report](#-project-report)
 
@@ -360,21 +359,6 @@ node scripts/seedAdmin.js
 
 ---
 
-## 📸 Screenshots
-
-| Login | Available Events | Training Management |
-|---|---|---|
-| Role-selection secure login with college branding | Browse and register for internal/external events | Create programs with auto-generated sessions |
-
-| Student Management | Attendance | Selection Report |
-|---|---|---|
-| Full CRUD with department/batch filters | Bulk mark attendance per session | Auto-ranked by weighted score |
-
-| Kit Management | Achievement Records | Audit Logs |
-|---|---|---|
-| Stock tracking with issue/return workflow | Hall of Champions with medal tally | Complete system activity log with CSV export |
-
----
 
 ## 🔮 Future Enhancements
 
